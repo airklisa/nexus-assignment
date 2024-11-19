@@ -4,4 +4,6 @@
   <h1>Hello world!</h1>
 </template>
 
-<style scoped></style>
+<style lang="scss">
+@import './assets/scss/base';
+</style>

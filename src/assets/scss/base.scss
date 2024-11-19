@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import './variables';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  color: $color-main;
+  background-color: $color-black;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+img {
+  width: 100%;
+}
+
+i {
+  height: 100%;
+}
+
+main {
+  width: 100%;
+}
