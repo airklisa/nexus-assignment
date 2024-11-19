@@ -5,5 +5,5 @@
 </template>
 
 <style lang="scss">
-@import './assets/scss/base';
+@use './assets/scss/base';
 </style>
