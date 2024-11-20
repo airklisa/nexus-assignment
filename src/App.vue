@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import VehicleSelector from './components/VehicleSelector.vue'
+</script>
 
 <template>
-  <h1>Hello world!</h1>
+  <main>
+    <VehicleSelector />
+  </main>
 </template>
 
 <style lang="scss">
