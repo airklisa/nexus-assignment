@@ -13,6 +13,15 @@ export const useVehicleStore = defineStore('vehicleStore', {
     error: null,
   }),
 
+  getters: {
+    selectedVehicle(state) {
+      if (state.selectedYear && state.selectedMake && state.selectedModel) {
+        return `Your currently selected vehicle is ${state.selectedYear} ${state.selectedMake} ${state.selectedModel}`
+      }
+      return 'No vehicle selected'
+    },
+  },
+
   actions: {
     handleError(actionName, err) {
       console.error(`Error in ${actionName} function:`, err)

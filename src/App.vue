@@ -1,5 +1,5 @@
 <script setup>
-import VehicleSelector from './components/VehicleSelector.vue'
+import VehicleSelector from './views/VehicleSelector.vue'
 </script>
 
 <template>
@@ -9,5 +9,5 @@ import VehicleSelector from './components/VehicleSelector.vue'
 </template>
 
 <style lang="scss">
-@use './assets/scss/base';
+@use './assets/scss/core/base';
 </style>

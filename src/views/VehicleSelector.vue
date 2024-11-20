@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="vehicle-selector">
     <h1>Select Your Vehicle</h1>
     <Dropdown
       label="Year"
@@ -21,7 +21,10 @@
     />
 
     <div v-if="vehicleStore.error" class="error">{{ vehicleStore.error }}</div>
-    <div v-if="vehicleStore.loading">Loading...</div>
+    <div class="vehicle">
+      <span v-if="vehicleStore.loading">Loading...</span>
+      <span v-else>{{ vehicleStore.selectedVehicle }}</span>
+    </div>
   </div>
 </template>
 
@@ -67,3 +70,7 @@ watch(
   },
 )
 </script>
+
+<style scoped lang="scss">
+@use '../assets/scss/views/vehicle-selector';
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dropdown">
     <label :for="label">{{ label }}</label>
     <select :id="label" :disabled="!options.length" v-model="modelValueProxy">
       <option value="" disabled>Select {{ label }}</option>
@@ -31,10 +31,6 @@ const modelValueProxy = computed({
 })
 </script>
 
-<style scoped>
-select {
-  margin-top: 8px;
-  padding: 8px;
-  width: 100%;
-}
+<style scoped lang="scss">
+@use '../assets/scss/components/dropdown';
 </style>
