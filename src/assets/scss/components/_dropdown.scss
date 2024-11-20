@@ -1,6 +1,13 @@
+@use '../core/mixins' as *;
+
 .dropdown {
   min-width: 600px;
   margin-bottom: 30px;
+
+  @include md {
+    min-width: unset;
+    width: 100%;
+  }
 
   label {
     font-size: 20px;
